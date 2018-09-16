@@ -1,10 +1,10 @@
 const abc = ["a", "b", "c"]
 
-const head = ([x, ...rest]) => x
+const head = () => undefined
 // head(abc) //=> "a"
 head(abc) //?
 
-const tail = ([x, ...rest]) => rest
+const tail = () => undefined
 // tail(abc) //=> ["b", "c"]
 tail(abc) //?
 

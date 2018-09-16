@@ -1,1 +1,1 @@
-const reduce = (acc, xs) => undefined
+const reduce = (reducer, acc, [x, ...xs]) => undefined

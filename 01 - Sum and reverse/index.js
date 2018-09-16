@@ -1,4 +1,4 @@
-const sum = ([num, ...nums]) => undefined
+const sum = undefined
 
 const reverse = undefined
 

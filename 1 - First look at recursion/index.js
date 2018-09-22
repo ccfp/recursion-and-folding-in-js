@@ -6,16 +6,17 @@ const getOdd = ([num, ...nums]) => {
   return isOdd(num) ? num : getOdd(nums)
 }
 
-const getOdd = ([num, ...nums]) => {
-  console.log(num, nums)
-  return isOdd(num) ? true : nums.length > 0 ? getOdd(nums) : false
+// const isAnyOdd = ([num, ...nums]) => {
+//   console.log(num, nums)
+//   return isOdd(num) || (nums.length > 0 ? isAnyOdd(nums) : false)
+// }
+
+const isAnyOdd = ([num, ...nums]) => {
+  if (num === undefined) return false
+  return isOdd(num) || isAnyOdd(nums)
 }
 
-getOdd([2, 4, 6]) //?
-
-// const isAnyOdd = ([num, ...nums]) => {
-//   return isOdd(num) ||
-// }
+isAnyOdd([2, 4, 6]) //?
 
 // isAnyOdd([2, 4, 6])
 // -> false

@@ -1,5 +1,5 @@
 // What are x and y?
-const [x, y] = [0, 1, 2, 3, 4, 5]
+const [x, y, ...rest] = [0, 1, 2, 3, 4, 5]
 
 // Sample array
 const abc = ["a", "b", "c"]

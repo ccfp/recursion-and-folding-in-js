@@ -1,8 +1,5 @@
 const flatten = arr =>
-  arr.reduce(
-    (acc, x) => (Array.isArray(x) ? [...acc, ...flatten(x)] : [...acc, x]),
-    []
-  )
+  arr.reduce((acc, x) => acc.concat(Array.isArray(x) ? flatten(x) : x), [])
 
 const nestedArr = [1, [[2, [3, 4]], 5]]
 

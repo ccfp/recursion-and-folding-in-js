@@ -1,4 +1,4 @@
-const { flatten } = require("./contrived-interview-question")
+const flatten = require("./contrived-interview")
 
 describe("flatten", () => {
   it("flattens an arbitrarily-nested array", () => {

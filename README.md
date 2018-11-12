@@ -1,6 +1,6 @@
 # Recursion and folding in JavaScript
 
-These are examples of using recursion and folding (aka `reduce`) in JavaScript.
+These are examples of using recursion and folding (aka `reduce`) in JavaScript. Starting point is `master` branch, solutions we came up with were pushed to `solved`.
 
 ## React App
 
